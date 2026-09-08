@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+
+  "name": "THM Badge",
+  "version": "2.1.2",
+  "description": "Automatically keep a beautiful TryHackMe profile badge updated on GitHub.",
+
+  "permissions": [
+    "storage",
+    "alarms",
+    "identity"
+  ],
+
+  "host_permissions": [
+    "https://tryhackme.com/*",
+    "https://api.github.com/*",
+    "https://github.com/*",
+    "https://thm-badge-oauth.goldenking2734.workers.dev/*"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "thm-badge@thmbadge.app",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "authenticationInfo",
+          "personallyIdentifyingInfo"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}
