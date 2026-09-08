@@ -78,9 +78,7 @@ THM-Badge-Extension/
 │   ├── popup.html          # Extension popup interface
 │   ├── popup.js            # Popup UI logic
 │   └── icon.png            # Extension icon
-│
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 > The extension does **not** use a separate `config.js`. Configuration required by the extension is contained in the extension source.
