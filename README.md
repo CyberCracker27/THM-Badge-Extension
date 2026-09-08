@@ -467,16 +467,6 @@ git push origin feature/my-feature
 
 ---
 
-
-## 👨‍💻 Author
-
-**Gopi Krishnan**
-
-GitHub:  
-https://github.com/CyberCracker27
-
----
-
 ## ⭐ Support
 
 If you find THM Badge useful:
